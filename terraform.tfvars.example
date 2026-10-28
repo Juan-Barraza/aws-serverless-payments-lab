@@ -1,0 +1,17 @@
+region      = "us-east-1"
+project     = "orders-lab"
+environment = "dev"
+
+tags = { owner = "your-nombre" }
+
+log_retention_days = 7
+api_throttle_rate  = 5
+api_throttle_burst = 10
+
+
+hash_key="id"
+
+
+
+paypal_ssm_prefix = "/orders/paypal"
+paypal_base_url   = "https://api-m.sandbox.paypal.com"
